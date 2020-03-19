@@ -1,0 +1,15 @@
+{
+  "name": "anonce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass sass/main.scss css/style.css --watch",
+    "compil": "node-sass sass/main.scss css/style.comp.css",
+    "concat": "concat -o css/style.concat.css css/additional.css css/style.comp.css",
+
+    "prefix": "postcss css/style.concat.css --use=autoprefixer --map=false --output=css/style.prefix.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
